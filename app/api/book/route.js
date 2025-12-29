@@ -1,35 +1,16 @@
 import { Resend } from "resend";
 
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export async function POST(req) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const adminEmail = process.env.ADMIN_EMAIL;
-
-  if (!apiKey) {
-    console.error("Missing RESEND_API_KEY");
-    return Response.json(
-      { success: false, error: "Server misconfiguration: RESEND_API_KEY not set" },
-      { status: 500 }
-    );
-  }
-
-  if (!adminEmail) {
-    console.error("Missing ADMIN_EMAIL");
-    return Response.json(
-      { success: false, error: "Server misconfiguration: ADMIN_EMAIL not set" },
-      { status: 500 }
-    );
-  }
-
-  const resend = new Resend(apiKey);
-
   try {
     const data = await req.json();
 
     await resend.emails.send({
       from: "Wedding Booking <onboarding@resend.dev>",
-      to: adminEmail,
+      to: process.env.ADMIN_EMAIL,
       subject: "📸 New Wedding Booking",
-      html: `
+     html: `
   <div style="max-width:600px;margin:auto;font-family:Arial,Helvetica,sans-serif;background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #eee">
     
     <!-- HEADER -->
@@ -113,11 +94,15 @@ export async function POST(req) {
 
   </div>
 `,
+
     });
 
     return Response.json({ success: true });
   } catch (error) {
     console.error("Resend Error:", error);
-    return Response.json({ success: false }, { status: 500 });
+    return Response.json(
+      { success: false },
+      { status: 500 }
+    );
   }
 }
