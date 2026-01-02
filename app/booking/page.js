@@ -70,7 +70,7 @@ export default function BookingPage() {
     "w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500";
 
   return (
-    <div className="min-h-screen bg-purple-100 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-purple-100 flex items-center justify-center p-6 pb-30">
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-3xl rounded-3xl bg-white p-8 shadow-xl"
@@ -144,3 +144,4 @@ export default function BookingPage() {
     </div>
   );
 }
+
