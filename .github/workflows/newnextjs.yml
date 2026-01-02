@@ -29,8 +29,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-      ADMIN_EMAIL: ${{kalundia7@gmail.com}}
+      RESEND_API_KEY: ${{ re_fMrPgEpa_3wPcvBHEJuwFwnwH8fVnXCZA }}
+      ADMIN_EMAIL: ${{ sunnyrajdeogam163@gmail.com }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
