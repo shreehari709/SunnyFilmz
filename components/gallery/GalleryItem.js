@@ -19,9 +19,9 @@ export default function GalleryItem({ item }) {
       <p className="mt-4 text-xs uppercase tracking-widest text-gray-500">
         Wedding
       </p>
-      <h3 className="mt-1 text-sm font-medium tracking-wide">
+   { /*  <h3 className="mt-1 text-sm font-medium tracking-wide">
         {item.title}
-      </h3>
+      </h3> */}
     </div>
   );
 }
