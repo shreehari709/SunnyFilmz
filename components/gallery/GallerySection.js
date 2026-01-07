@@ -11,7 +11,7 @@ export default function GallerySection() {
 
       <div className="space-y-14">
         {galleryItems.map((item) => (
-          <GalleryItem key={item.title} item={item} />
+          <GalleryItem key={item.id} item={item} />
         ))}
       </div>
     </section>

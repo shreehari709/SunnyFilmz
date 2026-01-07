@@ -1,8 +1,7 @@
 import Image from "next/image";
-
 export default function CrewCard({ member }) {
   return (
-    <div className="bg-[#111827] rounded-xl p-6 flex flex-col sm:flex-row gap-6 items-center">
+   <div className="bg-[#111827] rounded-xl p-6 flex flex-col sm:flex-row gap-6 items-center">
       <Image
         src={member.image}
         alt={member.name}

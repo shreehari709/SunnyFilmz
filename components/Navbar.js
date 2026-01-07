@@ -127,7 +127,7 @@ function NavItem({ href, children, active, glow }) {
     >
       {glow && active && (
         <>
-          <span className="absolute -top-2 h-1.5 w-8 rounded-full bg-[#EBC2B5]" />
+          <span className="absolute -top-2 h-1.5 w-8 rounded-full bg-gradient-to-r from-[#ee9ca7] to-[#ffdde1]" />
           <span className="absolute -top-6 h-8 w-8 rounded-full bg-[#EBC2B5]/30 blur-xl" />
         </>
       )}
