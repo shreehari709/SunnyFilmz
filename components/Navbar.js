@@ -56,7 +56,7 @@ export default function Navbar() {
       </header>
 
       {/* ================= MOBILE BOTTOM NAVBAR ================= */}
-      <nav className="fixed bottom-4 left-1/2 z-50 w-[92%] max-w-md -translate-x-1/2 rounded-2xl bg-[#1A1A1A] px-6 py-3 shadow-[0_20px_40px_rgba(0,0,0,0.25)] md:hidden">
+      <nav className="fixed bottom-4 left-1/2 z-50 w-[92%] max-w-md -translate-x-1/2 rounded-2xl bg-[#EBC2B5] px-6 py-3 shadow-[0_20px_40px_rgba(0,0,0,0.25)] md:hidden">
         <div className="flex items-center justify-between">
           {MOBILE_LINKS.map(({ href, icon: Icon, glow }) => (
             <NavItem
@@ -121,7 +121,7 @@ function NavItem({ href, children, active, glow }) {
       className={`relative flex h-12 w-12 items-center justify-center rounded-xl transition-all
         ${
           active
-            ? "text-[#EBC2B5]"
+            ? "text-[#1A1A1A]"
             : "text-[#9C9C9C] hover:text-[#EBC2B5]"
         }`}
     >
