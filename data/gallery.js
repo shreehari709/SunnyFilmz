@@ -32,4 +32,34 @@ export const galleryItems = [
     image: "https://res.cloudinary.com/dq4l50k5a/image/upload/v1767756672/DSC09436_copyyy_cvhmmh.jpg",
     blackWhite: true,
   },
+  {
+    id: "emma & john1",
+    title: "Emma & John",
+    image: "https://res.cloudinary.com/dq4l50k5a/image/upload/v1770182591/48_fptemk.jpg",
+    blackWhite: true,
+  },
+  {
+    id: "emma & john2",
+    title: "Emma & John",
+    image: "https://res.cloudinary.com/dq4l50k5a/image/upload/v1770182591/62_qdisrw.jpg",
+    blackWhite: true,
+  },
+  {
+    id: "emma & john3",
+    title: "Emma & John",
+    image: "https://res.cloudinary.com/dq4l50k5a/image/upload/v1770182591/59_htmnhi.jpg",
+    blackWhite: true,
+  },
+  {
+    id: "emma & john4",
+    title: "Emma & John",
+    image: "https://res.cloudinary.com/dq4l50k5a/image/upload/v1770182592/61_s5zti5.jpg",
+    blackWhite: true,
+  },
+  {
+    id: "emma & john5",
+    title: "Emma & John",
+    image: "https://res.cloudinary.com/dq4l50k5a/image/upload/v1770182878/DSC08680_e5v8pn.jpg",
+    blackWhite: true,
+  },
 ];
