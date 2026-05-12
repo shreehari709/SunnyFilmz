@@ -12,6 +12,7 @@ const ReviewsSection = dynamic(() => import("./Reviews"), {
 
 export default function HomePage() {
   return (
+    <title>SunnyFilmz</title>
     <div className="min-h-screen bg-[#FDF2F0] text-[#333]">
       <main className="pt-4">
         <HeroSection />
