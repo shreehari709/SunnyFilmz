@@ -10,7 +10,6 @@ export const pricingPlans = [
       "250 Edited Pictures",
       "25 Sheets Album",
       "Traditional Video",
-      "Cinematic Video",
       "Wedding Highlights Video",
     ],
   },
